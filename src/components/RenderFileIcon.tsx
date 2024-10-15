@@ -11,22 +11,22 @@ interface Iprops {
 const extensionIconPathes : Record<string ,string> ={
 
 // files 
-  tsx:"/public/icons/react_ts",
-  jsx:"/public/icons/react",
-html:"/public/icons/html",
-css:"/public/icons/css",
-ts:"/public/icons/typescript",
-js:"/public/icons/javascript",
-json:"/public/icons/json",
-gitignore:"/public/icons/git",
-scss:"/public/icons/sass",
+  tsx:"./public/icons/react_ts",
+  jsx:"./public/icons/react",
+html:"./public/icons/html",
+css:"./public/icons/css",
+ts:"./public/icons/typescript",
+js:"./public/icons/javascript",
+json:"./public/icons/json",
+gitignore:"./public/icons/git",
+scss:"./public/icons/sass",
 
 //  Folders 
 
-node_modules:"/public/icons/folder-node",
-public:"/public/icons/folder-public",
-src:"/public/icons/folder-src",
-components:"/public/icons/folder-components"
+node_modules:"./public/icons/folder-node",
+public:"./public/icons/folder-public",
+src:"./public/icons/folder-src",
+components:"./public/icons/folder-components"
 
 
 
@@ -66,8 +66,8 @@ export default function RenderFileIcon({fileName,isOpen,isFolder}:Iprops) {
 if (isFolder) {
 
 if(isOpen)
-  return  <IconImage src="/public/icons/folder-default-open.svg" />
-else return  <IconImage src="/public/icons/folder-default.svg" />
+  return  <IconImage src="./public/icons/folder-default-open.svg" />
+else return  <IconImage src="/.public/icons/folder-default.svg" />
 
 }
 
