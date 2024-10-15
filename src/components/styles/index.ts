@@ -1,0 +1,1 @@
+export const svgStyles={whidth:25,height:25}
